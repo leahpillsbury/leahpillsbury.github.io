@@ -1,0 +1,128 @@
+body {
+  width: 70%;
+  margin: 100px auto;
+  font-size: 20px;
+  font-family: 'Neuton', Helvetica, Arial;
+  color: #030D4F;
+  background-color: #E7EDEA;
+}
+
+header {
+  position: relative;
+}
+
+footer {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: .8em;
+}
+
+p {
+  line-height: 22px;
+}
+
+a {
+  color: #FD9729;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+h1 {
+  font-family: 'Neuton', Georgia, serif;
+  font-size: 4em;
+  font-weight: normal;
+  color: #030D4F;
+  margin: 2px;
+  display: inline-block;
+}
+
+.icon-container {
+  overflow: hidden;
+}
+
+.icon {
+  display: inline-block;
+  padding: 0px 3px 0px 3px;
+  margin-top: 26px;
+  height: 50px;
+  width: 50px;
+  float: right;
+}
+
+.icon:hover {
+  background-color: #E7EDEA;
+  opacity: 0.5;
+}
+
+.email {
+  background: url(../images/sprite-icons.png) -7px -150px no-repeat;
+}
+.linkedin {
+  background: url(../images/sprite-icons.png) -7px -10px no-repeat;
+}
+.twitter {
+  background: url(../images/sprite-icons.png) -7px -80px no-repeat;
+}
+
+.content {
+  padding-top: 10px;
+  clear: both;
+}
+
+.copyright {
+  float: right;
+}
+
+/* Mobile */
+@media all and (max-width: 665px) {
+  body {
+    margin: 20px auto;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 2.1em;
+  }
+}
+
+/* Tablet */
+@media all and (max-width: 1000px) {
+  header {
+    text-align: center;
+  }
+
+  p {
+    padding: 0px 15px 0px 20px;
+  }
+
+  .icon-container {
+    display: block;
+  }
+
+  .icon {
+    margin-top: 10px;
+    float: none;
+  }
+
+  footer {
+    padding: 0px 25px 0px 25px;
+  }
+}
+
+/* Desktop */
+@media all and (min-width: 1000px) {
+  .mast {
+    display: inline-block;
+    float: left;
+  }
+
+  .icon-container {
+    display: inline-block;
+    float: right;
+  }
+}
